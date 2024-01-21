@@ -17,4 +17,4 @@ The exif library can be installed with `pip install exif`
    - The default folder is set as `sample_images`. To define the folder of the images designated for processing, you can use the --f attribute (string) to indicate folder name
    - For example, `python batch_process_metadata.py --f 'images_to_process'`
    - Output (CSV file) will be automatically saved in `/data` folder
--`weekly_schedule.py` : Airflow script to weekly trigger the `batch_process_metadata.py`
+- `weekly_schedule.py` : Airflow script to weekly trigger the `batch_process_metadata.py`
