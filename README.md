@@ -1,11 +1,7 @@
-# Read and Modify Image Metadata Extraction in Python with exif
-
-Link to Medium article: https://towardsdatascience.com/read-and-edit-image-metadata-with-python-f635398cd991
-
 ### Context
 For every photo, there is more than meets the eye. The photos taken with digital cameras and smartphones contain rich metadata, which is additional information about the image beyond the visible pixels.
 
-This metadata can be useful in numerous business cases. For instance, fraud detection systems for insurance claims analyze metadata of submitted photographs to check whether the pictures were taken before the accident (aka date of loss).
+This metadata can be useful in numerous business cases. For example , fraud detection systems for insurance claims analyze metadata of submitted photographs to check whether the pictures were taken before the accident (aka date of loss).
 
 In this project, we explore how we can utilize the exif library to read and edit the metadata of digital images.
 
@@ -21,6 +17,4 @@ The exif library can be installed with `pip install exif`
    - The default folder is set as `sample_images`. To define the folder of the images designated for processing, you can use the --f attribute (string) to indicate folder name
    - For example, `python batch_process_metadata.py --f 'images_to_process'`
    - Output (CSV file) will be automatically saved in `/data` folder
-
-### References
-- https://exif.readthedocs.io/en/latest/
+-`weekly_schedule.py` : Airflow script to weekly trigger the `batch_process_metadata.py`
